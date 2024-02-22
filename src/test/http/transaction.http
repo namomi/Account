@@ -1,0 +1,22 @@
+### use balacne
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "3629667247",
+  "amount": 3000
+}
+
+### cancel balacne
+POST http://localhost:8080/transaction/cancel
+Content-Type: application/json
+
+{
+  "transactionId": "34dc87feb9844364bdb61f704a186da8",
+  "accountNumber": "3629667247",
+  "amount": 3000
+}
+
+### query transaction
+GET http://localhost:8080/transaction/c4ce4b69c5b74df7b37b5e348d5cf7df
